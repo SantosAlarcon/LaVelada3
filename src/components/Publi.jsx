@@ -1,5 +1,5 @@
-import revolut from "/revolut-velada.png";
-import alsa from "/alsa.png";
+import revolut from "/revolut-velada.jpg";
+import alsa from "/alsa.jpg";
 import "../styles/Publi.css";
 
 const Publi = () => {
