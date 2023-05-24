@@ -1,0 +1,67 @@
+#info {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+#info div:first-child {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+#info div > div {
+    padding: 0.5em 1.25rem 1rem 1.25rem;
+}
+
+#info h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#fecha {
+    font-family: "Boxing";
+    background-color: white;
+    color: black;
+    font-size: 3.5em;
+}
+
+#entradas {
+    font-family: "Boxing";
+    background-color: skyblue;
+    color: black;
+    font-size: 1.75em;
+}
+
+#entradas h2 {
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+#entradas h2:hover {
+    transform: scale(105%);
+    filter: contrast(150%);
+}
+
+#twitch {
+    font-family: "Boxing";
+    background-color: black;
+    color: white;
+    font-size: 2.25em;
+}
+
+#twitch h2 {
+    transition: 0.3s ease-in-out;
+}
+
+#twitch h2:hover {
+    transform: scale(105%);
+    filter: contrast(150%);
+}
+
+.ibai {
+    color: yellow;
+}
+

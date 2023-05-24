@@ -1,0 +1,36 @@
+#como-llegar {
+    width: 100%;
+    padding: 2.5rem 1.5rem 5rem 1.5rem;
+    gap: 1rem;
+    max-width: 72rem;
+    margin: auto;
+}
+
+#como-llegar h2 {
+    font-family: "Boxing";
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#como-llegar a {
+    display: block;
+    width: 100%;
+    transition: all .15s ease-in-out;
+}
+
+#como-llegar a:hover {
+    transform: scale(102%);
+    filter: contrast(110%);
+}
+
+#como-llegar img {
+    filter: invert(100%);
+    box-shadow: 0 0 .2em #fff;
+    border: 1px #0000001a solid;
+    border-radius: .25rem;
+}

@@ -1,0 +1,49 @@
+header {
+    position: relative;
+}
+
+header > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    top: 2rem;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header img {
+    width: 8rem;
+    height: auto;
+}
+
+.titulo {
+    font-family: "Boxing";
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.titulo span:nth-child(1) {
+    background: linear-gradient(#fff 0%, #666 50%, #fff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.titulo span:nth-child(2) {
+    background: linear-gradient(#ff0 0%, #880 50%, #ff0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+    header img {
+        width: 16rem;
+    }
+}

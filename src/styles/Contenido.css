@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Boxing";
+    src: url("/fonts/BOXING.otf") format('opentype');
+}
+
+main {
+	background: url("/background.jpg");
+	background-size: 100%;
+}
+
+#boxeadores {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	height: 100vh;
+	padding-top: 24px;
+	border-bottom: 1px white solid;
+}
+
+#boxers-izquierda,
+#boxers-derecha {
+	position: relative;
+	width: 100vw;
+}
+
+#boxers-izquierda img,
+#boxers-derecha img {
+	width: auto;
+	position: absolute;
+	bottom: 0;
+    cursor: pointer;
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-50%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		transform: translateX(50%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes rotate3d {
+	from {
+		opacity: 0;
+        transform: rotate3d(0,1,0, 360deg) scale(65%);
+	}
+
+	to {
+		opacity: 1;
+        transform: rotate3d(0,0,0, 0deg) scale(65%);
+	}
+}
+
+/* Cada uno de los boxeadores */
+/* Coscu */
+#boxers-izquierda img:nth-child(1) {
+	left: 0;
+	top: 0em;
+    height: 750px;
+	z-index: 50;
+	animation: 1s ease-in-out 300 fadeInLeft;
+    animation-iteration-count: 1;
+    clip-path: polygon(85% 33%, 73% 39%, 64% 43%, 29% 44%, 63% 52%, 90% 100%, 0% 100%, 0% 0%, 100% 0%, 99% 20%, 100% 31%);
+}
+
+/* Mayichi */
+#boxers-izquierda img:nth-child(2) {
+	left: 3%;
+	top: 15em;
+    height: 750px;
+	z-index: 40;
+	animation: 1s ease-in-out 500 fadeInLeft;
+    animation-iteration-count: 1;
+    clip-path: polygon(6% 100%, 9% 53%, 13% 22%, 29% 0, 69% 1%, 78% 5%, 77% 17%, 67% 25%, 67% 31%, 88% 39%, 89% 50%, 86% 60%, 86% 71%, 92% 76%, 99% 83%, 99% 100%);
+}
+
+/* Viruzz */
+#boxers-izquierda img:nth-child(3) {
+	left: 9%;
+	top: 17em;
+    height: 750px;
+	z-index: 30;
+	animation-delay: 700ms;
+	animation: fadeInLeft 1s ease-in-out;
+    clip-path: polygon(0 100%, 7% 87%, 6% 73%, 12% 61%, 13% 34%, 39% 22%, 22% 14%, 26% 4%, 42% 0%, 83% 0, 87% 7%, 79% 9%, 85% 14%, 83% 23%, 73% 25%, 68% 28%, 87% 45%, 94% 87%, 100% 91%, 99% 100%);
+}
+
+/* Fernanfloo */
+#boxers-izquierda img:nth-child(4) {
+	left: 25%;
+	top: 19em;
+	height: 750px;
+	z-index: 20;
+	animation-delay: 900ms;
+	animation: fadeInLeft 1s ease-in-out;
+    clip-path: polygon(0% 41%, 7% 31%, 27% 24%, 15% 19%, 14% 10%, 26% 2%, 42% 0%, 64% 1%, 66% 6%, 69% 10%, 72% 16%, 68% 23%, 60% 25%, 65% 28%, 74% 33%, 76% 54%, 76% 70%, 80% 80%, 93% 89%, 100% 96%, 100% 100%, 1% 100%);
+}
+
+/* La Rivers */
+#boxers-izquierda img:nth-child(5) {
+	left: 40%;
+	top: 21em;
+	height: 750px;
+	z-index: 10;
+	animation-delay: 1100ms;
+	animation: fadeInLeft 1s ease-in-out;
+    clip-path: polygon(29% 100%, 13% 82%, 25% 71%, 35% 64%, 20% 50%, 0% 39%, 1% 0%, 52% 0, 79% 7%, 85% 13%, 87% 16%, 89% 22%, 82% 26%, 68% 28%, 68% 33%, 82% 38%, 96% 44%, 96% 52%, 90% 57%, 93% 68%, 93% 79%, 99% 87%, 100% 100%);
+}
+
+/* Papigavi */
+#boxers-izquierda img:nth-child(6) {
+	left: 45%;
+	top: 24em;
+	height: 750px;
+	z-index: 0;
+	animation-delay: 1300ms;
+	animation: fadeInLeft 1s ease-in-out;
+}
+
+/* HolaSoyGerman */ 
+#boxers-derecha img:nth-child(1) {
+	right: 0;
+	top: 0em;
+	height: 750px;
+	z-index: 50;
+	animation-delay: 300ms;
+	animation: fadeInRight 1s ease-in-out;
+    clip-path: polygon(98% 0%, 38% 0%, 23% 3%, 14% 7%, 0% 15%, 7% 21%, 14% 25%, 7% 29%, 16% 32%, 20% 36%, 30% 42%, 45% 42%, 65% 41%, 62% 45%, 18% 53%, 8% 60%, 6% 70%, 7% 79%, 5% 84%, 0% 100%, 100% 100%);
+}
+
+/* Amouranth */
+#boxers-derecha img:nth-child(2) {
+	right: 3%;
+	top: 15em;
+	height: 750px;
+	z-index: 40;
+	animation-delay: 500ms;
+	animation: fadeInRight 1s ease-in-out;
+    clip-path: polygon(33% 11%, 45% 28%, 24% 39%, 26% 45%, 33% 50%, 35% 63%, 12% 80%, 4% 89%, 3% 100%, 100% 100%, 100% 64%, 100% 44%, 100% 22%, 88% 8%, 78% 0%, 41% 0);
+}
+
+/* Shelao */
+#boxers-derecha img:nth-child(3) {
+	right: 15%;
+	top: 17em;
+	height: 750px;
+	z-index: 30;
+	animation-delay: 700ms;
+	animation: fadeInRight 1s ease-in-out;
+    clip-path: polygon(25% 27%, 15% 15%, 28% 3%, 62% 3%, 76% 16%, 100% 35%, 100% 85%, 100% 100%, 0 100%, 0 89%, 0 80%);
+}
+
+/* Luzu */
+#boxers-derecha img:nth-child(4) {
+	right: 30%;
+	top: 19em;
+	height: 750px;
+	z-index: 20;
+	animation-delay: 900ms;
+	animation: fadeInRight 1s ease-in-out;
+    clip-path: polygon(0 100%, 0 89%, 21% 31%, 34% 27%, 32% 22%, 17% 20%, 19% 12%, 30% 0, 80% 0%, 94% 9%, 81% 18%, 100% 30%, 100% 100%);
+}
+
+/* Rivers */
+#boxers-derecha img:nth-child(5) {
+	right: 45%;
+	top: 21em;
+	height: 750px;
+	z-index: 10;
+	animation-delay: 1100ms;
+	animation: fadeInRight 1s ease-in-out;
+    clip-path: polygon(21% 0%, 19% 10%, 21% 23%, 16% 36%, 12% 46%, 18% 55%, 9% 68%, 0% 78%, 0% 100%, 100% 100%, 100% 27%, 81% 17%, 75% 0%);
+}
+
+#boxers-derecha img:nth-child(6) {
+	right: 52%;
+	top: 24em;
+	height: 750px;
+	z-index: 0;
+	animation-delay: 1300ms;
+	animation: fadeInRight 1s ease-in-out;
+}
+
+@media screen and (max-width: 541px) {
+	#boxeadores img {
+        height: 25vh !important;
+	}
+}
