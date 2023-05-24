@@ -1,39 +1,40 @@
-#info {
+#combate {
     position: absolute;
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
     z-index: 50;
-}
-
-#info div:first-child {
     display: flex;
+    row-gap: 0;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
 }
 
-#info div > div {
-    padding: 0.5em 1.25rem 1rem 1.25rem;
-}
-
-#info h2 {
+#combate h2 {
     padding: 0;
     margin: 0;
 }
 
-#info img {
-    width: 100px;
-    margin: -2em;
-    position: relative;
+#combate img {
+    width: 64px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #boxeador1 {
     background-color: black;
     color: white;
 }
+
 #boxeador2 {
     background-color: white;
     color: black;
+}
+
+#boxeador1, #boxeador2 {
+    padding: 0 1.25rem;
 }
 
 #boxeador1 h2, #boxeador2 h2 {
