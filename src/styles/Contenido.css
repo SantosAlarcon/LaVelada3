@@ -3,9 +3,11 @@
     src: url("/fonts/BOXING.otf") format('opentype');
 }
 
-main {
+#contenido {
 	background: url("/background.jpg");
 	background-size: 100%;
+    position: relative;
+    height: 100vh;
 }
 
 #boxeadores {

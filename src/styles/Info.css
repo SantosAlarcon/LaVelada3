@@ -4,16 +4,13 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 50;
+    width: 100%;
 }
 
-#info div:first-child {
+#info > div:first-child {
     display: flex;
     flex-direction: column;
-    transition: all 0.3s ease-in-out;
-}
-
-#info div > div {
-    padding: 0.5em 1.25rem 1rem 1.25rem;
+    transition: all 0.15s ease-in-out;
 }
 
 #info h2 {
@@ -21,23 +18,25 @@
     margin: 0;
 }
 
-#fecha {
+#fecha h2 {
     font-family: "Boxing";
     background-color: white;
     color: black;
-    font-size: 3.5em;
+    font-size: 4.5em;
 }
 
 #entradas {
     font-family: "Boxing";
-    background-color: skyblue;
+    background-color: rgb(2 132 199);
     color: black;
-    font-size: 1.75em;
 }
 
 #entradas h2 {
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     color: white;
+    font-size: 2.25em;
+    line-height: 2.5rem;
+    display: inline-block;
 }
 
 #entradas h2:hover {
@@ -45,15 +44,22 @@
     filter: contrast(150%);
 }
 
+#twitch, #entradas {
+    padding: .5rem 1.25rem .25rem 1.25rem;
+}
+
 #twitch {
     font-family: "Boxing";
     background-color: black;
     color: white;
-    font-size: 2.25em;
+}
+
+#twitch a {
+    font-size: 48px;
 }
 
 #twitch h2 {
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #twitch h2:hover {
@@ -65,3 +71,13 @@
     color: yellow;
 }
 
+@media screen and (min-width: 1024px) {
+    #info {
+        left: 50%;
+        bottom: 12rem;
+        transform: translateX(-50%);
+        z-index: 50;
+        position: absolute;
+        width: auto;
+    }
+}

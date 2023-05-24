@@ -52,8 +52,8 @@ const Contenido = () => {
     }
 
     return (
-        <main>
-            <section ref={boxeadoresRef} id="boxeadores">
+        <section id="contenido">
+            <div ref={boxeadoresRef} id="boxeadores">
                 <div id="boxers-izquierda">
                     <img fetchpriority="true" onMouseLeave={() => handleMouseleave(0)} onMouseEnter={() => handleHover(0)} src="/coscu.webp" alt="coscu" />
                     <img onMouseLeave={() => handleMouseleave(1)} onMouseEnter={() => handleHover(1)} src="/mayichi.webp" alt="mayichi" />
@@ -70,9 +70,9 @@ const Contenido = () => {
                     <img onMouseLeave={() => handleMouseleave(4)} onMouseEnter={() => handleHover(4)} src="/rivers.webp" alt="rivers" />
                     <img onMouseLeave={() => handleMouseleave(5)} onMouseEnter={() => handleHover(5)} src="/ampeter.webp" alt="ampeter" />
                 </div>
-            </section>
+            </div>
             {hovered ? <Combate boxeador1={boxeador1} boxeador2={boxeador2} /> : <Info />}
-        </main>
+        </section>
     )
 }
 

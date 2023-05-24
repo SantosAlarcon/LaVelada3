@@ -1,8 +1,9 @@
 header {
     position: relative;
+    height: 100vh;
 }
 
-header > div {
+header > div:first-child {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -56,6 +57,10 @@ header img {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        height: auto;
+    }
+
     header > div {
         top: 2rem;
         left: 50%;
