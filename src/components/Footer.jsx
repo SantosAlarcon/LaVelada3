@@ -1,17 +1,17 @@
 import React from 'react'
-import instagram from "/instagram.svg"
-import twitter from "/twitter.svg"
 import logoVelada3 from "/logo-footer.webp"
 import patrocinadores from "/patrocinadores.webp"
 import "../styles/Footer.css"
+import LogoInstagram from "./IconoInstagram"
+import LogoTwitter from "./IconoTwitter"
 
 const Footer = () => {
     return (
         <footer>
             <div>
                 <div id="redes-sociales">
-                    <a href="https://instagram.com/infolavelada" target='_blank'><img src={instagram} /></a>
-                    <a href="https://twitter.com/infoLaVelada" target='_blank'><img src={twitter} /></a>
+                    <a href="https://instagram.com/infolavelada" target='_blank'><LogoInstagram /></a>
+                    <a href="https://twitter.com/infoLaVelada" target='_blank'><LogoTwitter /></a>
                 </div>
                 <div id="logo-footer">
                     <img src={logoVelada3} alt="logo" />
