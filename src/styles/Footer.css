@@ -5,10 +5,10 @@ footer {
     width: 100%;
     margin: auto;
     inset: 0;
+    padding: 2.5rem 1.5rem;
 }
 
 footer > div:first-child {
-    padding: 2.5rem 1.5rem;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -41,8 +41,11 @@ footer > div:first-child {
 }
 
 #logo-footer {
-    width: 20rem;
     height: auto;
+}
+
+#logo-footer img {
+    width: 20rem;
 }
 
 #patrocinadores {
@@ -52,7 +55,7 @@ footer > div:first-child {
 }
 
 #patrocinadores img {
-    width: 250px;
+    width: 16rem;
 }
 
 #copyright {
