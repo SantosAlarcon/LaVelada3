@@ -25,18 +25,18 @@ const Contenido = () => {
         setBoxeador1(box1);
         setBoxeador2(box2);
 
-        boxIzq[id].setAttribute("style", "scale: 1.1; contrast: 1.1; transition: all .3s ease-in-out");
-        boxDer[id].setAttribute("style", "scale: 1.1; contrast: 1.1; transition: all .3s ease-in-out");
+        boxIzq[id].setAttribute("style", "scale: 1.1; contrast: 1.1; transition: all .2s ease-in-out");
+        boxDer[id].setAttribute("style", "scale: 1.1; contrast: 1.1; transition: all .2s ease-in-out");
 
         Object.keys(boxIzq).forEach((box, index) => {
             if (index !== id) {
-                boxIzq[index].setAttribute("style", "filter: blur(2px) grayscale(0.8); transition: all .3s ease-in-out");
+                boxIzq[index].setAttribute("style", "filter: blur(2px) grayscale(0.8); transition: all .2s ease-in-out");
             }
         })
 
         Object.keys(boxDer).forEach((box, index) => {
             if (index !== id) {
-                boxDer[index].setAttribute("style", "filter: blur(2px) grayscale(0.8); transition: all .3s ease-in-out");
+                boxDer[index].setAttribute("style", "filter: blur(2px) grayscale(0.8); transition: all .2s ease-in-out");
             }
         })
     }
@@ -44,8 +44,8 @@ const Contenido = () => {
     // Cuando se va el ratón de la imágen, se eliminan los filtros de todos los
     // boxeadores.
     const handleMouseleave = () => {
-        Object.keys(boxIzq).forEach((box, index) => boxIzq[index].setAttribute("style", "transition: all .3s ease-in-out; filter: blur(0) grayscale(0)"));
-        Object.keys(boxDer).forEach((box, index) => boxDer[index].setAttribute("style", "transition: all .3s ease-in-out; filter: blur(0) grayscale(0)"));
+        Object.keys(boxIzq).forEach((box, index) => boxIzq[index].setAttribute("style", "transition: all .2s ease-in-out; filter: blur(0) grayscale(0)"));
+        Object.keys(boxDer).forEach((box, index) => boxDer[index].setAttribute("style", "transition: all .2s ease-in-out; filter: blur(0) grayscale(0)"));
         setHovered(false);
         setBoxeador1("");
         setBoxeador2("");

@@ -1,8 +1,5 @@
 #combate {
-    position: absolute;
     margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 50;
 }
 
@@ -45,4 +42,15 @@
     line-height: 1;
     font-family: "Boxing";
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+    #combate {
+        left: 50%;
+        bottom: 12rem;
+        transform: translateX(-50%);
+        z-index: 50;
+        position: absolute;
+        width: auto;
+    }
 }
