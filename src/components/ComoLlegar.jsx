@@ -1,4 +1,4 @@
-import mapa from "/map.png"
+import mapa from "/map.jpg"
 import "../styles/ComoLlegar.css"
 
 const ComoLlegar = () => {
