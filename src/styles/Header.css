@@ -6,13 +6,14 @@ header > div {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: .25em;
     justify-content: center;
     align-items: center;
     top: 2rem;
     z-index: 10;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
 }
 
 header img {
@@ -26,24 +27,40 @@ header img {
     text-align: center;
     font-size: 1.875rem;
     line-height: 2.25rem;
+    margin: 0;
 }
 
 .titulo span:nth-child(1) {
-    background: linear-gradient(#fff 0%, #666 50%, #fff 100%);
+    background: linear-gradient(#fff 0%, #ddd 50%, #fff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 .titulo span:nth-child(2) {
-    background: linear-gradient(#ff0 0%, #880 50%, #ff0 100%);
+    background: linear-gradient(#ff0 0%, #dd0 50%, #ff0 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 @media screen and (min-width: 1024px) {
+    .titulo {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    
     header img {
         width: 16rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header > div {
+        top: 2rem;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin-top: 0;
     }
 }

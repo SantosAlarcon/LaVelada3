@@ -8,8 +8,8 @@ import Publi from "./components/Publi";
 function App() {
 	return (
 		<>
-            {/*<Header />
-			<Contenido />*/}
+            <Header />
+            {/*<Contenido />*/}
             <Publi />
             <ComoLlegar />
 			<Footer />
