@@ -79,7 +79,7 @@
 
 /* Misho */
 #boxers-izquierda img:nth-child(3) {
-	left: 12%;
+	left: 13%;
     height: 75%;
 	z-index: 30;
 	animation: fadeInLeft 1s both;
