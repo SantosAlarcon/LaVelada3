@@ -2,6 +2,18 @@ import React, { useRef, useEffect, useState } from 'react'
 import "../styles/Contenido.css"
 import Info from './Info'
 import Combate from "./Combate"
+import coscu from "/coscu.webp"
+import mayichi from "/mayichi.webp"
+import viruzz from "/viruzz.webp"
+import fernanfloo from "/fernanfloo.webp"
+import larivers from "/larivers.webp"
+import papigavi from "/papigavi.webp"
+import german from "/german.webp"
+import amouranth from "/amouranth.webp"
+import shelao from "/shelao.webp"
+import luzu from "/luzu.webp"
+import rivers from "/rivers.webp"
+import ampeter from "/ampeter.webp"
 
 const Contenido = () => {
     const [hovered, setHovered] = useState(false);
@@ -55,20 +67,20 @@ const Contenido = () => {
         <section id="contenido">
             <div ref={boxeadoresRef} id="boxeadores">
                 <div id="boxers-izquierda">
-                    <img fetchpriority="true" onMouseLeave={() => handleMouseleave(0)} onMouseEnter={() => handleHover(0)} src="/coscu.webp" alt="Coscu" />
-                    <img onMouseLeave={() => handleMouseleave(1)} onMouseEnter={() => handleHover(1)} src="/mayichi.webp" alt="Mayichi" />
-                    <img onMouseLeave={() => handleMouseleave(2)} onMouseEnter={() => handleHover(2)} src="/viruzz.webp" alt="Viruzz" />
-                    <img onMouseLeave={() => handleMouseleave(3)} onMouseEnter={() => handleHover(3)} src="/fernanfloo.webp" alt="Fernanfloo" />
-                    <img onMouseLeave={() => handleMouseleave(4)} onMouseEnter={() => handleHover(4)} src="/larivers.webp" alt="La Rivers" />
-                    <img onMouseLeave={() => handleMouseleave(5)} onMouseEnter={() => handleHover(5)} src="/papigavi.webp" alt="Papigavi" />
+                    <img fetchpriority="true" onMouseLeave={() => handleMouseleave(0)} onMouseEnter={() => handleHover(0)} src={coscu} alt="Coscu" />
+                    <img onMouseLeave={() => handleMouseleave(1)} onMouseEnter={() => handleHover(1)} src={mayichi} alt="Mayichi" />
+                    <img onMouseLeave={() => handleMouseleave(2)} onMouseEnter={() => handleHover(2)} src={viruzz} alt="Viruzz" />
+                    <img onMouseLeave={() => handleMouseleave(3)} onMouseEnter={() => handleHover(3)} src={fernanfloo} alt="Fernanfloo" />
+                    <img onMouseLeave={() => handleMouseleave(4)} onMouseEnter={() => handleHover(4)} src={larivers} alt="La Rivers" />
+                    <img onMouseLeave={() => handleMouseleave(5)} onMouseEnter={() => handleHover(5)} src={papigavi} alt="Papigavi" />
                 </div>
                 <div id="boxers-derecha">
-                    <img fetchpriority="true" onMouseLeave={() => handleMouseleave(0)} onMouseEnter={() => handleHover(0)} src="/german.webp" alt="german" />
-                    <img onMouseLeave={() => handleMouseleave(1)} onMouseEnter={() => handleHover(1)} src="/amouranth.webp" alt="Amouranth" />
-                    <img onMouseLeave={() => handleMouseleave(2)} onMouseEnter={() => handleHover(2)} src="/shelao.webp" alt="shelao" />
-                    <img onMouseLeave={() => handleMouseleave(3)} onMouseEnter={() => handleHover(3)} src="/luzu.webp" alt="Luzu" />
-                    <img onMouseLeave={() => handleMouseleave(4)} onMouseEnter={() => handleHover(4)} src="/rivers.webp" alt="Rivers" />
-                    <img onMouseLeave={() => handleMouseleave(5)} onMouseEnter={() => handleHover(5)} src="/ampeter.webp" alt="Ampeter" />
+                    <img fetchpriority="true" onMouseLeave={() => handleMouseleave(0)} onMouseEnter={() => handleHover(0)} src={german} alt="german" />
+                    <img onMouseLeave={() => handleMouseleave(1)} onMouseEnter={() => handleHover(1)} src={amouranth} alt="Amouranth" />
+                    <img onMouseLeave={() => handleMouseleave(2)} onMouseEnter={() => handleHover(2)} src={shelao} alt="shelao" />
+                    <img onMouseLeave={() => handleMouseleave(3)} onMouseEnter={() => handleHover(3)} src={luzu} alt="Luzu" />
+                    <img onMouseLeave={() => handleMouseleave(4)} onMouseEnter={() => handleHover(4)} src={rivers} alt="Rivers" />
+                    <img onMouseLeave={() => handleMouseleave(5)} onMouseEnter={() => handleHover(5)} src={ampeter} alt="Ampeter" />
                 </div>
             </div>
             {hovered ? <Combate boxeador1={boxeador1} boxeador2={boxeador2} /> : <Info />}
