@@ -4,7 +4,7 @@ import Info from './Info'
 import Combate from "./Combate"
 import coscu from "/coscu.webp"
 import mayichi from "/mayichi.webp"
-import viruzz from "/viruzz.webp"
+import misho from "/misho.webp"
 import fernanfloo from "/fernanfloo.webp"
 import larivers from "/larivers.webp"
 import papigavi from "/papigavi.webp"
@@ -69,7 +69,7 @@ const Contenido = () => {
                 <div id="boxers-izquierda">
                     <img fetchpriority="true" onMouseLeave={() => handleMouseleave(0)} onMouseEnter={() => handleHover(0)} src={coscu} alt="Coscu" />
                     <img onMouseLeave={() => handleMouseleave(1)} onMouseEnter={() => handleHover(1)} src={mayichi} alt="Mayichi" />
-                    <img onMouseLeave={() => handleMouseleave(2)} onMouseEnter={() => handleHover(2)} src={viruzz} alt="Viruzz" />
+                    <img onMouseLeave={() => handleMouseleave(2)} onMouseEnter={() => handleHover(2)} src={misho} alt="Misho" />
                     <img onMouseLeave={() => handleMouseleave(3)} onMouseEnter={() => handleHover(3)} src={fernanfloo} alt="Fernanfloo" />
                     <img onMouseLeave={() => handleMouseleave(4)} onMouseEnter={() => handleHover(4)} src={larivers} alt="La Rivers" />
                     <img onMouseLeave={() => handleMouseleave(5)} onMouseEnter={() => handleHover(5)} src={papigavi} alt="Papigavi" />
