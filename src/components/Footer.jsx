@@ -1,6 +1,6 @@
 import React from 'react'
 import logoVelada3 from "/logo-footer.webp"
-import patrocinadores from "/patrocinadores.webp"
+import patrocinadores from "/patrocinadores2.webp"
 import "../styles/Footer.css"
 import LogoInstagram from "./IconoInstagram"
 import LogoTwitter from "./IconoTwitter"
