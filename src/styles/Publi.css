@@ -1,4 +1,4 @@
-#publicidad {
+#publi {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	max-width: 72rem;
@@ -8,7 +8,7 @@
 	gap: 1rem;
 }
 
-#publicidad a {
+#publi a {
 	grid-column: span 2 / span 2;
 	display: block;
 	border-radius: 0.25rem;
@@ -16,12 +16,12 @@
 	transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#publicidad a:hover {
+#publi a:hover {
 	transform: scale(102%);
 	filter: contrast(110%);
 }
 
-#publicidad img {
+#publi img {
 	object-fit: cover;
 	border: 1px #ffffff1a solid;
 	border-radius: 0.25rem;
@@ -30,7 +30,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-	#publicidad a {
+	#publi a {
 		grid-column: span 1 / span 1;
 	}
 }
