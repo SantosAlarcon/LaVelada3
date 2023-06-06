@@ -2,7 +2,7 @@
   "name": "lavelada3",
   "private": true,
     "main":"/src/index.html",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
     "homepage": "https://santosalarcon.github.io/LaVelada3",
   "scripts": {
